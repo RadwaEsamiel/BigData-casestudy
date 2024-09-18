@@ -1,0 +1,172 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+24/07/06 12:05:04 INFO SparkContext: Running Spark version 3.2.4
+24/07/06 12:05:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/07/06 12:05:05 INFO ResourceUtils: ==============================================================
+24/07/06 12:05:05 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/07/06 12:05:05 INFO ResourceUtils: ==============================================================
+24/07/06 12:05:05 INFO SparkContext: Submitted application: Data Processing and Insertion
+24/07/06 12:05:05 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/07/06 12:05:05 INFO ResourceProfile: Limiting resource is cpu
+24/07/06 12:05:05 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/07/06 12:05:05 INFO SecurityManager: Changing view acls to: itversity
+24/07/06 12:05:05 INFO SecurityManager: Changing modify acls to: itversity
+24/07/06 12:05:05 INFO SecurityManager: Changing view acls groups to: 
+24/07/06 12:05:05 INFO SecurityManager: Changing modify acls groups to: 
+24/07/06 12:05:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(itversity); groups with view permissions: Set(); users  with modify permissions: Set(itversity); groups with modify permissions: Set()
+24/07/06 12:05:05 INFO Utils: Successfully started service 'sparkDriver' on port 44391.
+24/07/06 12:05:05 INFO SparkEnv: Registering MapOutputTracker
+24/07/06 12:05:05 INFO SparkEnv: Registering BlockManagerMaster
+24/07/06 12:05:05 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/07/06 12:05:05 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/07/06 12:05:05 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/07/06 12:05:05 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-7ce6d8c4-9edc-4f30-a402-591d1cdfad57
+24/07/06 12:05:05 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+24/07/06 12:05:05 INFO SparkEnv: Registering OutputCommitCoordinator
+24/07/06 12:05:06 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/06 12:05:06 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+24/07/06 12:05:06 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://itvdelab:4041
+24/07/06 12:05:06 INFO Executor: Starting executor ID driver on host itvdelab
+24/07/06 12:05:06 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39539.
+24/07/06 12:05:06 INFO NettyBlockTransferService: Server created on itvdelab:39539
+24/07/06 12:05:06 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/07/06 12:05:06 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, itvdelab, 39539, None)
+24/07/06 12:05:06 INFO BlockManagerMasterEndpoint: Registering block manager itvdelab:39539 with 366.3 MiB RAM, BlockManagerId(driver, itvdelab, 39539, None)
+24/07/06 12:05:06 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, itvdelab, 39539, None)
+24/07/06 12:05:06 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, itvdelab, 39539, None)
+/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py:238: FutureWarning: Python 3.6 support is deprecated in Spark 3.2.
+  FutureWarning
+24/07/06 12:05:07 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/07/06 12:05:07 INFO SharedState: Warehouse path is 'file:/home/itversity/spark-warehouse'.
+24/07/06 12:05:09 INFO HiveConf: Found configuration file null
+24/07/06 12:05:09 INFO HiveUtils: Initializing HiveMetastoreConnection version 2.3.9 using Spark classes.
+24/07/06 12:05:09 INFO HiveConf: Found configuration file null
+24/07/06 12:05:10 INFO HiveClientImpl: Warehouse location for Hive client (version 2.3.9) is file:/home/itversity/spark-warehouse
+24/07/06 12:05:10 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+24/07/06 12:05:10 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+24/07/06 12:05:10 INFO HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+24/07/06 12:05:10 INFO ObjectStore: ObjectStore, initialize called
+24/07/06 12:05:10 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+24/07/06 12:05:10 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+24/07/06 12:05:11 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+24/07/06 12:05:13 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+24/07/06 12:05:13 INFO ObjectStore: Initialized ObjectStore
+24/07/06 12:05:13 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+24/07/06 12:05:13 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@172.19.0.3
+24/07/06 12:05:13 INFO HiveMetaStore: Added admin role in metastore
+24/07/06 12:05:13 INFO HiveMetaStore: Added public role in metastore
+24/07/06 12:05:13 INFO HiveMetaStore: No user is added in admin role, since config is empty
+24/07/06 12:05:13 INFO HiveMetaStore: 0: get_database: default
+24/07/06 12:05:13 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: default	
+24/07/06 12:05:13 INFO HiveMetaStore: 0: get_database: global_temp
+24/07/06 12:05:13 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: global_temp	
+24/07/06 12:05:13 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+24/07/06 12:05:13 INFO HiveMetaStore: 0: get_database: bigdata_dwh
+24/07/06 12:05:13 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: bigdata_dwh	
+24/07/06 12:05:13 WARN ObjectStore: Failed to get database bigdata_dwh, returning NoSuchObjectException
+Traceback (most recent call last):
+  File "/home/itversity/hourly_processing.py", line 33, in <module>
+    branches_hive_df = spark.table("BigData_DWH.branches_dimension")
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/session.py", line 741, in table
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 117, in deco
+pyspark.sql.utils.AnalysisException: Table or view not found: BigData_DWH.branches_dimension;
+'UnresolvedRelation [BigData_DWH, branches_dimension], [], false
+
+24/07/06 12:05:14 INFO SparkContext: Invoking stop() from shutdown hook
+24/07/06 12:05:14 INFO SparkUI: Stopped Spark web UI at http://itvdelab:4041
+24/07/06 12:05:14 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/07/06 12:05:14 INFO MemoryStore: MemoryStore cleared
+24/07/06 12:05:14 INFO BlockManager: BlockManager stopped
+24/07/06 12:05:14 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/07/06 12:05:14 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/07/06 12:05:14 INFO SparkContext: Successfully stopped SparkContext
+24/07/06 12:05:14 INFO ShutdownHookManager: Shutdown hook called
+24/07/06 12:05:14 INFO ShutdownHookManager: Deleting directory /tmp/spark-528e155d-e462-4b58-8c29-16d0e7a16685/pyspark-69476b37-a339-4a8c-9e90-77bab0c9dd39
+24/07/06 12:05:14 INFO ShutdownHookManager: Deleting directory /tmp/spark-528e155d-e462-4b58-8c29-16d0e7a16685
+24/07/06 12:05:14 INFO ShutdownHookManager: Deleting directory /tmp/spark-5d01d815-da68-478e-bdab-6deed1b100db
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+24/07/06 13:05:03 INFO SparkContext: Running Spark version 3.2.4
+24/07/06 13:05:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/07/06 13:05:03 INFO ResourceUtils: ==============================================================
+24/07/06 13:05:03 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/07/06 13:05:03 INFO ResourceUtils: ==============================================================
+24/07/06 13:05:03 INFO SparkContext: Submitted application: Data Processing and Insertion
+24/07/06 13:05:03 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/07/06 13:05:03 INFO ResourceProfile: Limiting resource is cpu
+24/07/06 13:05:03 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/07/06 13:05:03 INFO SecurityManager: Changing view acls to: itversity
+24/07/06 13:05:03 INFO SecurityManager: Changing modify acls to: itversity
+24/07/06 13:05:03 INFO SecurityManager: Changing view acls groups to: 
+24/07/06 13:05:03 INFO SecurityManager: Changing modify acls groups to: 
+24/07/06 13:05:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(itversity); groups with view permissions: Set(); users  with modify permissions: Set(itversity); groups with modify permissions: Set()
+24/07/06 13:05:04 INFO Utils: Successfully started service 'sparkDriver' on port 44941.
+24/07/06 13:05:04 INFO SparkEnv: Registering MapOutputTracker
+24/07/06 13:05:04 INFO SparkEnv: Registering BlockManagerMaster
+24/07/06 13:05:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/07/06 13:05:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/07/06 13:05:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/07/06 13:05:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-2cfc1307-0c94-4469-83b8-71eb83ec5219
+24/07/06 13:05:04 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+24/07/06 13:05:04 INFO SparkEnv: Registering OutputCommitCoordinator
+24/07/06 13:05:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/07/06 13:05:04 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+24/07/06 13:05:04 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://itvdelab:4041
+24/07/06 13:05:05 INFO Executor: Starting executor ID driver on host itvdelab
+24/07/06 13:05:05 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44753.
+24/07/06 13:05:05 INFO NettyBlockTransferService: Server created on itvdelab:44753
+24/07/06 13:05:05 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/07/06 13:05:05 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, itvdelab, 44753, None)
+24/07/06 13:05:05 INFO BlockManagerMasterEndpoint: Registering block manager itvdelab:44753 with 366.3 MiB RAM, BlockManagerId(driver, itvdelab, 44753, None)
+24/07/06 13:05:05 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, itvdelab, 44753, None)
+24/07/06 13:05:05 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, itvdelab, 44753, None)
+/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py:238: FutureWarning: Python 3.6 support is deprecated in Spark 3.2.
+  FutureWarning
+24/07/06 13:05:05 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/07/06 13:05:05 INFO SharedState: Warehouse path is 'file:/home/itversity/spark-warehouse'.
+24/07/06 13:05:07 INFO HiveConf: Found configuration file null
+24/07/06 13:05:07 INFO HiveUtils: Initializing HiveMetastoreConnection version 2.3.9 using Spark classes.
+24/07/06 13:05:07 INFO HiveConf: Found configuration file null
+24/07/06 13:05:08 INFO HiveClientImpl: Warehouse location for Hive client (version 2.3.9) is file:/home/itversity/spark-warehouse
+24/07/06 13:05:08 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+24/07/06 13:05:08 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+24/07/06 13:05:08 INFO HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+24/07/06 13:05:08 INFO ObjectStore: ObjectStore, initialize called
+24/07/06 13:05:08 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+24/07/06 13:05:08 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+24/07/06 13:05:09 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+24/07/06 13:05:11 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+24/07/06 13:05:11 INFO ObjectStore: Initialized ObjectStore
+24/07/06 13:05:11 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+24/07/06 13:05:11 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@172.19.0.3
+24/07/06 13:05:11 INFO HiveMetaStore: Added admin role in metastore
+24/07/06 13:05:11 INFO HiveMetaStore: Added public role in metastore
+24/07/06 13:05:11 INFO HiveMetaStore: No user is added in admin role, since config is empty
+24/07/06 13:05:11 INFO HiveMetaStore: 0: get_database: default
+24/07/06 13:05:11 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: default	
+24/07/06 13:05:11 INFO HiveMetaStore: 0: get_database: global_temp
+24/07/06 13:05:11 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: global_temp	
+24/07/06 13:05:11 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+24/07/06 13:05:11 INFO HiveMetaStore: 0: get_database: bigdata_dwh
+24/07/06 13:05:11 INFO audit: ugi=itversity	ip=unknown-ip-addr	cmd=get_database: bigdata_dwh	
+24/07/06 13:05:11 WARN ObjectStore: Failed to get database bigdata_dwh, returning NoSuchObjectException
+Traceback (most recent call last):
+  File "/home/itversity/hourly_processing.py", line 33, in <module>
+    branches_hive_df = spark.table("BigData_DWH.branches_dimension")
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/session.py", line 741, in table
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/home/itversity/.local/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 117, in deco
+pyspark.sql.utils.AnalysisException: Table or view not found: BigData_DWH.branches_dimension;
+'UnresolvedRelation [BigData_DWH, branches_dimension], [], false
+
+24/07/06 13:05:11 INFO SparkContext: Invoking stop() from shutdown hook
+24/07/06 13:05:11 INFO SparkUI: Stopped Spark web UI at http://itvdelab:4041
+24/07/06 13:05:11 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/07/06 13:05:11 INFO MemoryStore: MemoryStore cleared
+24/07/06 13:05:11 INFO BlockManager: BlockManager stopped
+24/07/06 13:05:11 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/07/06 13:05:11 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/07/06 13:05:11 INFO SparkContext: Successfully stopped SparkContext
+24/07/06 13:05:11 INFO ShutdownHookManager: Shutdown hook called
+24/07/06 13:05:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-3af12995-4d7e-41f2-97be-00e1f743202c/pyspark-c23e87b9-451d-4680-8eff-8fc01bbbebb9
+24/07/06 13:05:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-3af12995-4d7e-41f2-97be-00e1f743202c
+24/07/06 13:05:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-bf46ab38-ddb8-456b-b7ff-324cbca965bf

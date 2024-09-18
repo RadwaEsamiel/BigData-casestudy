@@ -1,0 +1,13 @@
+##Cron job entry that runs the script ingestion script every hour##
+
+0 * * * * python3 Ingestion.py >> itversity-material/project/logs/Ingestion.log 2>&1
+
+##Cron job entry that runs the script processing script every hour one hour after ingestion##
+
+5 * * * * /home/itversity/.local/bin/spark-submit --conf spark.pyspark.python=/usr/bin/python3 hourly_processing.py >> itversity-material/project/logs/hourly_processing.log 2>&1
+
+
+##Cron job entry that runs the script for creating a daily dump every day at one AM ##
+
+
+0 1 * * * /home/itversity/.local/bin/spark-submit --conf spark.pyspark.python=/usr/bin/python3 daily_dump_from_source.py >> itversity-material/project/logs/DailyDump_Source.log 2>&1
